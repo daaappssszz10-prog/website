@@ -1,0 +1,50 @@
+body {
+  background: linear-gradient(to bottom right, #ffb6c1, #ffe4e1);
+  font-family: 'Segoe UI', sans-serif;
+  text-align: center;
+  padding: 40px;
+  overflow: hidden;
+}
+
+h1 {
+  font-size: 2.5em;
+  color: #fff;
+  text-shadow: 1px 1px 5px #d6336c;
+}
+
+p {
+  font-size: 1.2em;
+  color: #fff;
+}
+
+button {
+  margin-top: 20px;
+  background-color: #fff;
+  color: #d6336c;
+  border: none;
+  padding: 12px 24px;
+  font-size: 1em;
+  border-radius: 10px;
+  cursor: pointer;
+  box-shadow: 0 0 10px #fff;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background-color: #d6336c;
+  color: #fff;
+}
+
+.hearts::before, .hearts::after {
+  content: "💖💗💘💞💓";
+  font-size: 2em;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  animation: jatuh 5s linear infinite;
+}
+
+@keyframes jatuh {
+  0% { transform: translateY(-100px) rotate(0deg); }
+  100% { transform: translateY(100vh) rotate(360deg); }
+}
